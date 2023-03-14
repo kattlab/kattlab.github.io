@@ -22,6 +22,29 @@
         text-align: center;
       }
     </style>
+    * {
+  box-sizing: border-box;
+}
+
+.left {
+  background-color: #2196F3;
+  padding: 20px;
+  float: left;
+  width: 50%; /* The width is 20%, by default */
+}
+.right {
+  background-color: #04AA6D;
+  padding: 20px;
+  float: left;
+  width: 50%; /* The width is 20%, by default */
+}
+
+/* Use a media query to add a break point at 800px: */
+@media screen and (max-width: 800px) {
+  .left, .right {
+    width: 100%; /* The width is 100%, when the viewport is 800px or smaller */
+  }
+}
     
   </head>
   
@@ -36,6 +59,14 @@
     <div class="myDiv">
   <h2>This is a heading in a div element</h2>
   <p>This is some text in a div element.</p>
+      
+         <div class="left">
+  <h2>This is a headLEFTlement</h2>
+  <p>This is some text in a div element.</p>
+              <div class="right">
+  <h2>This is a heading in a div element</h2>
+  <p>This is someRIGHTiv element.</p>
+                
 </div>
 </body>
 </html>
